@@ -7,7 +7,7 @@ export default function ContactForm() {
 	return (
 		<div
 			id='contacts'
-			className='flex w-full bg-blue-100 px-6 py-10 flex-col md:flex-nowrap mt-10 md:mb-0 gap-4'>
+			className='flex w-full bg-blue-100 px-6 py-20 flex-col gap-4'>
 			<h2 className='text-3xl font-bold text-center'>Контакти</h2>
 			<Card>
 				<CardBody>
