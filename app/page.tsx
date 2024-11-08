@@ -7,24 +7,22 @@ import ContactForm from '@/components/contactForm'
 
 export default function Home() {
 	return (
-		<section className='flex flex-col items-center justify-center gap-4 md:py-10'>
+		<section className='flex flex-col items-center justify-center gap-4'>
 			<Logo width={56} />
 			<Hero />
 			<div className='flex gap-3 w-'>
 				<Link
-					isExternal
 					className={buttonStyles({
 						color: 'primary',
 						radius: 'full',
 						variant: 'shadow',
 					})}
-					href=''>
+					href='#contacts'>
 					Дізнатися більше
 				</Link>
 				<Link
-					isExternal
 					className={buttonStyles({ variant: 'bordered', radius: 'full' })}
-					href=''>
+					href='#'>
 					Зареєструватися
 				</Link>
 			</div>
