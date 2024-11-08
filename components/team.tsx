@@ -38,7 +38,7 @@ const list = [
 function Team() {
 	return (
 		<div className='w-full flex flex-col px-6 pt-20'>
-			<h2 className='text-xs font-bold mb-5 before:w-3 before:h-3 before:content-[a] before:bg-black'>
+			<h2 className='flex items-center text-xs font-bold mb-5 before:w-2 before:h-2 before:inline-flex before:rounded-full before:mr-2 before:bg-black'>
 				Наша команда
 			</h2>
 			<div className='gap-2 grid grid-cols-2 sm:grid-cols-4'>
