@@ -4,13 +4,14 @@ import { button as buttonStyles } from '@nextui-org/theme'
 import { Logo } from '@/components/icons'
 import Hero from '@/components/hero'
 import ContactForm from '@/components/contactForm'
+import Team from '@/components/team'
 
 export default function Home() {
 	return (
 		<section className='flex flex-col items-center justify-center gap-4'>
-			<Logo width={56} />
+			<img src='logo.png' alt='logo' className='w-56' />
 			<Hero />
-			<div className='flex gap-3 w-'>
+			<div className='flex gap-3 mt-10'>
 				<Link
 					className={buttonStyles({
 						color: 'primary',
@@ -26,6 +27,7 @@ export default function Home() {
 					Зареєструватися
 				</Link>
 			</div>
+			<Team />
 			<ContactForm />
 		</section>
 	)
