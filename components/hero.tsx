@@ -4,7 +4,7 @@ import { title, subtitle } from '@/components/primitives'
 
 function Hero() {
 	return (
-		<div className='inline-block max-w-xl text-center justify-center mt-10'>
+		<div className='inline-block max-w-xl text-center justify-center mt-16'>
 			<span className={title()}>Підготовка&nbsp;</span>
 			<span className={title({ color: 'violet' })}>працівників&nbsp;</span>
 			<br />

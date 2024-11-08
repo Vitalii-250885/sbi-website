@@ -11,7 +11,7 @@ export default function Home() {
 		<section className='flex flex-col items-center justify-center gap-4'>
 			<img src='logo.png' alt='logo' className='w-56' />
 			<Hero />
-			<div className='flex gap-3 mt-10'>
+			<div className='flex gap-3 mt-16'>
 				<Link
 					className={buttonStyles({
 						color: 'primary',
