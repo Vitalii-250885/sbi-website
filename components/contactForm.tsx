@@ -7,11 +7,18 @@ import { Link } from '@nextui-org/link'
 
 export default function ContactForm() {
 	return (
-		<div id='contacts' className='flex w-full px-6 pt-20 pb-6 flex-col gap-4'>
-			<h2 className='text-3xl font-bold text-center'>Контакти</h2>
+		<div id='contacts' className='flex w-full px-6 pt-20 pb-36 flex-col gap-4'>
+			<h2 className='text-3xl font-bold text-center animation-timeline animate-emergence'>
+				Контакти
+			</h2>
 
-			<Accordion variant='shadow'>
-				<AccordionItem key='1' title='Номери телефонів'>
+			<Accordion
+				variant='shadow'
+				className='animation-timeline animate-emergence'>
+				<AccordionItem
+					key='1'
+					title='Номери телефонів'
+					className='animation-timeline animate-emergence'>
 					<Link className='font-bold' color='foreground'>
 						<img src='/phone.png' alt='facebook' className='w-7 mr-2' />
 						+38 (068)-368-93-07
@@ -21,13 +28,19 @@ export default function ContactForm() {
 						+38 (099)-619-31-61
 					</Link>
 				</AccordionItem>
-				<AccordionItem key='2' title='Електронна пошта'>
+				<AccordionItem
+					key='2'
+					title='Електронна пошта'
+					className='animation-timeline animate-emergence'>
 					<Link className='font-bold' color='foreground'>
 						<img src='/mail.png' alt='facebook' className='w-7 mr-2' />
 						sbi.in.ua@gmail.com
 					</Link>
 				</AccordionItem>
-				<AccordionItem key='3' title='Соціальні мережі'>
+				<AccordionItem
+					key='3'
+					title='Соціальні мережі'
+					className='animation-timeline animate-emergence'>
 					<Link key={'1'} className='mr-5' color='foreground'>
 						<img src='/facebook.png' alt='facebook' className='w-7 mr-2' />
 						<span className='font-bold'>sbiukraine</span>
@@ -39,7 +52,9 @@ export default function ContactForm() {
 				</AccordionItem>
 			</Accordion>
 
-			<h3 className='text-2xl text-center font-bold mt-5'>Напишіть нам</h3>
+			<h3 className='text-2xl text-center font-bold mt-5 animation-timeline animate-emergence'>
+				Напишіть нам
+			</h3>
 
 			<Input
 				variant='flat'
@@ -47,6 +62,7 @@ export default function ContactForm() {
 				type='text'
 				label='Ім&acute;я'
 				isRequired
+				className='animation-timeline animate-emergence'
 			/>
 			<Input
 				variant='flat'
@@ -54,6 +70,7 @@ export default function ContactForm() {
 				type='email'
 				label='Електронна пошта'
 				isRequired
+				className='animation-timeline animate-emergence'
 			/>
 			<Input
 				variant='flat'
@@ -61,9 +78,17 @@ export default function ContactForm() {
 				type='phone'
 				label='Номер телефону'
 				isRequired
+				className='animation-timeline animate-emergence'
 			/>
-			<Textarea variant='flat' label='Повідомлення' />
-			<Button color='primary' variant='solid'>
+			<Textarea
+				variant='flat'
+				label='Повідомлення'
+				className='animation-timeline animate-emergence'
+			/>
+			<Button
+				color='primary'
+				variant='solid'
+				className='animation-timeline animate-emergence'>
 				Надіслати
 			</Button>
 		</div>

@@ -17,3 +17,8 @@
 	background: rgba(82, 82, 82, 0.5);
 	border-radius: 8px;
 }
+
+.animation-timeline {
+	animation-timeline: view();
+	animation-range: entry 0 cover 30%;
+}

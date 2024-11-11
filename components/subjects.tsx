@@ -26,14 +26,16 @@ function Subjects() {
 
 	return (
 		<div className='px-6 pt-20 '>
-			<h2 className='text-4xl font-bold'>Ти вивчиш:</h2>
-			<div className='flex flex-wrap items-center pt-10'>
+			<h2 className='text-4xl font-bold animation-timeline animate-emergence'>
+				Ти вивчиш:
+			</h2>
+			<div className='flex flex-wrap items-center pt-10 '>
 				{subjects.map(subject => (
 					<>
-						<span className='whitespace-nowrap text-2xl opacity-70 leading-6'>
+						<span className='whitespace-nowrap text-2xl opacity-70 leading-6 animation-timeline animate-emergence'>
 							{subject}
 						</span>
-						<span>{star}</span>
+						<span className='animation-timeline animate-emergence'>{star}</span>
 					</>
 				))}
 			</div>
