@@ -1,15 +1,14 @@
+'use client'
+
 import React from 'react'
 
-function Subjects() {
-	const star = (
-		<svg
-			className='mx-2 w-2 fill-current'
-			viewBox='0 0 116 116'
-			xmlns='http://www.w3.org/2000/svg'>
-			<path d='M58 0L59.3036 3.52301C68.4193 28.1577 87.8423 47.5807 112.477 56.6964L116 58L112.477 59.3036C87.8423 68.4193 68.4193 87.8423 59.3036 112.477L58 116L56.6964 112.477C47.5807 87.8423 28.1577 68.4193 3.52301 59.3036L0 58L3.523 56.6964C28.1577 47.5807 47.5807 28.1577 56.6964 3.523L58 0Z' />
-		</svg>
-	)
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay } from 'swiper/modules'
 
+import 'swiper/css'
+import 'swiper/css/pagination'
+
+function Subjects() {
 	const subjects = [
 		'Систематичне богослов’я',
 		'Послання до Римлян',
@@ -25,21 +24,24 @@ function Subjects() {
 	]
 
 	return (
-		<div className='px-6 pt-20 '>
-			<h2 className='text-4xl font-bold animation-timeline animate-emergence'>
-				Ти вивчиш:
-			</h2>
-			<div className='flex flex-wrap items-center pt-10 '>
-				{subjects.map(subject => (
-					<>
-						<span className='whitespace-nowrap text-2xl text-gray-400 leading-6 animation-timeline animate-emergence'>
-							{subject}
-						</span>
-						<span className='animation-timeline animate-emergence'>{star}</span>
-					</>
-				))}
+		<>
+			<div className='w-full mx-3 p-3 mt-20 rounded-xl animation-timeline animate-emergence'>
+				<h2 className='text-3xl font-bold text-center'>Ти вивчиш:</h2>
+				<Swiper
+					autoplay={{
+						delay: 1500,
+						disableOnInteraction: true,
+					}}
+					modules={[Autoplay]}
+					className='mySwiper'>
+					{subjects.map(subject => (
+						<SwiperSlide>
+							<div className='text-2xl text-center'>{subject}</div>
+						</SwiperSlide>
+					))}
+				</Swiper>
 			</div>
-		</div>
+		</>
 	)
 }
 
