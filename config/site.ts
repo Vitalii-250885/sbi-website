@@ -23,7 +23,7 @@ export const siteConfig = {
 	],
 	navMenuItems: [
 		{
-			label: 'Профіль',
+			label: 'Увійти',
 			href: '/profile',
 		},
 		{
@@ -33,10 +33,6 @@ export const siteConfig = {
 		{
 			label: 'Календар',
 			href: '/calendar',
-		},
-		{
-			label: 'Вийти',
-			href: '/logout',
 		},
 	],
 	links: {},
