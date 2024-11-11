@@ -30,7 +30,7 @@ function Subjects() {
 
 	return (
 		<div className='px-6 pt-20 '>
-			<h3 className='text-4xl font-bold'>Ти вивчиш:</h3>
+			<h2 className='text-4xl font-bold'>Ти вивчиш:</h2>
 			<div className='flex flex-wrap items-center pt-10'>
 				{subjects.map(subject => (
 					<>

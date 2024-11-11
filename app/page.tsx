@@ -6,6 +6,7 @@ import Hero from '@/components/hero'
 import ContactForm from '@/components/contactForm'
 import Program from '@/components/program'
 import Subjects from '@/components/subjects'
+import Testimonials from '@/components/testimonials'
 
 export default function Home() {
 	return (
@@ -30,6 +31,7 @@ export default function Home() {
 			</div>
 			<Program />
 			<Subjects />
+			<Testimonials />
 			<ContactForm />
 		</section>
 	)

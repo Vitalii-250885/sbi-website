@@ -6,10 +6,8 @@ export default function ContactForm() {
 	return (
 		<div
 			id='contacts'
-			className='flex w-full bg-blue-100 px-6 py-20 flex-col gap-4'>
-			<h2 className='flex items-center text-xs font-bold mb-5 before:w-2 before:h-2 before:inline-flex before:rounded-full before:mr-2 before:bg-black'>
-				Контакти
-			</h2>
+			className='flex w-full bg-slate-400 bg-opacity-10 px-6 py-20 flex-col gap-4'>
+			<h2 className='text-3xl font-bold text-center'>Контакти</h2>
 			<span>Номери телефонів:</span>
 			<Link className='ml-5 font-bold' color='foreground'>
 				+38 (068)-368-93-07
