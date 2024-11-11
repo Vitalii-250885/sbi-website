@@ -32,7 +32,7 @@ function Subjects() {
 			<div className='flex flex-wrap items-center pt-10 '>
 				{subjects.map(subject => (
 					<>
-						<span className='whitespace-nowrap text-2xl opacity-70 leading-6 animation-timeline animate-emergence'>
+						<span className='whitespace-nowrap text-2xl text-gray-400 leading-6 animation-timeline animate-emergence'>
 							{subject}
 						</span>
 						<span className='animation-timeline animate-emergence'>{star}</span>
