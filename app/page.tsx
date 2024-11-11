@@ -10,7 +10,7 @@ import Testimonials from '@/components/testimonials'
 
 export default function Home() {
 	return (
-		<section className='flex flex-col items-center justify-center gap-4 py-8'>
+		<section className='flex flex-col items-center justify-center gap-4 pt-8'>
 			<img src='logo.png' alt='logo' className='w-56' />
 			<Hero />
 			<div className='flex gap-3 mt-16'>

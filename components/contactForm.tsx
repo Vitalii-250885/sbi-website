@@ -6,7 +6,7 @@ export default function ContactForm() {
 	return (
 		<div
 			id='contacts'
-			className='flex w-full bg-slate-400 bg-opacity-10 px-6 py-20 flex-col gap-4'>
+			className='flex w-full bg-slate-400 bg-opacity-10 p-6 mt-20 flex-col gap-4'>
 			<h2 className='text-3xl font-bold text-center'>Контакти</h2>
 			<span>Номери телефонів:</span>
 			<Link className='ml-5 font-bold' color='foreground'>
