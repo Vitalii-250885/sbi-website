@@ -4,7 +4,8 @@ import { button as buttonStyles } from '@nextui-org/theme'
 import { Logo } from '@/components/icons'
 import Hero from '@/components/hero'
 import ContactForm from '@/components/contactForm'
-import Team from '@/components/team'
+import Program from '@/components/program'
+import Subjects from '@/components/subjects'
 
 export default function Home() {
 	return (
@@ -27,7 +28,8 @@ export default function Home() {
 					Зареєструватися
 				</Link>
 			</div>
-			<Team />
+			<Program />
+			<Subjects />
 			<ContactForm />
 		</section>
 	)

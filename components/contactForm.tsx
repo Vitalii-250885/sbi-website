@@ -1,5 +1,4 @@
 import { Button } from '@nextui-org/button'
-import { Card, CardBody } from '@nextui-org/card'
 import { Input, Textarea } from '@nextui-org/input'
 import { Link } from '@nextui-org/link'
 
@@ -11,21 +10,17 @@ export default function ContactForm() {
 			<h2 className='flex items-center text-xs font-bold mb-5 before:w-2 before:h-2 before:inline-flex before:rounded-full before:mr-2 before:bg-black'>
 				Контакти
 			</h2>
-			<Card>
-				<CardBody>
-					<span>Номери телефонів:</span>
-					<Link className='ml-5 font-bold' color='foreground'>
-						+38 (068)-368-93-07
-					</Link>
-					<Link className='ml-5 font-bold' color='foreground'>
-						+38 (099)-619-31-61
-					</Link>
-					<span>Електронна пошта:</span>
-					<Link className='ml-5 font-bold' color='foreground'>
-						sbi.in.ua@gmail.com
-					</Link>
-				</CardBody>
-			</Card>
+			<span>Номери телефонів:</span>
+			<Link className='ml-5 font-bold' color='foreground'>
+				+38 (068)-368-93-07
+			</Link>
+			<Link className='ml-5 font-bold' color='foreground'>
+				+38 (099)-619-31-61
+			</Link>
+			<span>Електронна пошта:</span>
+			<Link className='ml-5 font-bold' color='foreground'>
+				sbi.in.ua@gmail.com
+			</Link>
 
 			<h3 className='text-2xl text-center font-bold mt-5'>Напишіть нам</h3>
 
