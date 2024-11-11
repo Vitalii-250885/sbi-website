@@ -23,11 +23,6 @@ export default function Home() {
 					href='#contacts'>
 					Дізнатися більше
 				</Link>
-				<Link
-					className={buttonStyles({ variant: 'bordered', radius: 'full' })}
-					href='#'>
-					Зареєструватися
-				</Link>
 			</div>
 			<Program />
 			<Subjects />
