@@ -6,9 +6,6 @@ import { Input, Textarea } from '@nextui-org/input'
 import { Link } from '@nextui-org/link'
 
 export default function ContactForm() {
-	const defaultContent =
-		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-
 	return (
 		<div id='contacts' className='flex w-full px-6 pt-20 pb-6 flex-col gap-4'>
 			<h2 className='text-3xl font-bold text-center'>Контакти</h2>
