@@ -30,7 +30,7 @@ function Subjects() {
 				<Swiper
 					autoplay={{
 						delay: 1500,
-						disableOnInteraction: true,
+						disableOnInteraction: false,
 					}}
 					modules={[Autoplay]}
 					className='mySwiper'>
