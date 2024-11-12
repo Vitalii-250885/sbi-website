@@ -11,7 +11,9 @@ import React from 'react'
 function SubjectsNextSession() {
 	return (
 		<div className='mt-12 lg:mt-0 animation-timeline animate-emergence'>
-			<Table className='w-full animation-timeline animate-emergence'>
+			<Table
+				aria-label='Предмети наступної сесії'
+				className='w-full animation-timeline animate-emergence'>
 				<TableHeader>
 					<TableColumn className='text-center'>Предмет</TableColumn>
 					<TableColumn className='text-center'>Лектор</TableColumn>
