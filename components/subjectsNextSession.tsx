@@ -10,10 +10,7 @@ import React from 'react'
 
 function SubjectsNextSession() {
 	return (
-		<div className='mt-12 animation-timeline animate-emergence'>
-			<h3 className='text-center text-xl font-bold mb-6 animation-timeline animate-emergence'>
-				Теми наступної сесії
-			</h3>
+		<div className='mt-12 lg:mt-0 animation-timeline animate-emergence'>
 			<Table className='w-full animation-timeline animate-emergence'>
 				<TableHeader>
 					<TableColumn className='text-center'>Предмет</TableColumn>
