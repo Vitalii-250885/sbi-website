@@ -44,7 +44,7 @@ export default function ContactForm() {
 						variant='flat'
 						size='lg'
 						type='text'
-						label='Ім&acute;я'
+						label="Ім'я"
 						isRequired
 						className='animation-timeline animate-emergence'
 					/>

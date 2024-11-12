@@ -1,3 +1,5 @@
+'use client'
+
 import { Link } from '@nextui-org/link'
 import { button as buttonStyles } from '@nextui-org/theme'
 
@@ -6,6 +8,7 @@ import ContactForm from '@/components/contactForm'
 import Program from '@/components/program'
 import Subjects from '@/components/subjects'
 import Testimonials from '@/components/testimonials'
+import CalendarComponent from '@/components/calendar'
 
 export default function Home() {
 	return (
@@ -25,6 +28,7 @@ export default function Home() {
 			</div>
 			<Program />
 			<Subjects />
+			<CalendarComponent />
 			<Testimonials />
 			<ContactForm />
 		</section>

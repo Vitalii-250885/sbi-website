@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 	},
 	description: siteConfig.description,
 	icons: {
-		icon: '/favicon.ico',
+		icon: '/logo.png',
 	},
 }
 
@@ -32,7 +32,7 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html suppressHydrationWarning lang='en'>
+		<html suppressHydrationWarning lang='uk'>
 			<head />
 			<body
 				className={clsx(

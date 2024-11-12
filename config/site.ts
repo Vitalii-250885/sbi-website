@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-	name: 'Next.js + NextUI',
-	description: 'Make beautiful websites regardless of your design experience.',
+	name: "Слов'янський Баптистський Інститут",
+	description: "Сайт Слов'янського Баптистського Інституту",
 	navItems: [
 		{
 			label: 'Бібліотека',
@@ -10,7 +10,7 @@ export const siteConfig = {
 		},
 		{
 			label: 'Календар',
-			href: '/calendar',
+			href: '#calendar',
 		},
 		{
 			label: 'Контакти',
@@ -28,7 +28,11 @@ export const siteConfig = {
 		},
 		{
 			label: 'Календар',
-			href: '/calendar',
+			href: '#calendar',
+		},
+		{
+			label: 'Контакти',
+			href: '#contacts',
 		},
 	],
 	links: {},

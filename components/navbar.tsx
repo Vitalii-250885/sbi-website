@@ -24,11 +24,9 @@ export const Navbar = () => {
 			className='fixed top-0 left-0 animate-emergence'>
 			<NavbarContent className='basis-1/5 sm:basis-full' justify='start'>
 				<NavbarBrand as='li' className='gap-3 max-w-fit'>
-					<NextLink
-						className='flex w-12 justify-start items-center gap-1'
-						href='#'>
+					<Link className='flex w-12 justify-start items-center gap-1' href='#'>
 						<Logo width={12} className='animate-emergence' />
-					</NextLink>
+					</Link>
 				</NavbarBrand>
 				<ul className='hidden sm:flex gap-4 justify-start ml-2'>
 					{siteConfig.navItems.map(item => (
@@ -47,13 +45,11 @@ export const Navbar = () => {
 				</ul>
 			</NavbarContent>
 
-			<NavbarContent
-				className='hidden sm:flex basis-1/5 sm:basis-full'
-				justify='end'>
-				<NavbarItem className='hidden sm:flex gap-2'>
+			<NavbarContent className='flex' justify='end'>
+				<NavbarItem className='flex gap-2'>
 					<ThemeSwitch />
 				</NavbarItem>
-				<NavbarItem className='hidden sm:flex'>
+				<NavbarItem>
 					<Button
 						className='text-sm font-normal text-default-600 bg-default-100'
 						startContent='сюда можно вставить icon'
@@ -61,11 +57,9 @@ export const Navbar = () => {
 						Увійти
 					</Button>
 				</NavbarItem>
-			</NavbarContent>
-
-			<NavbarContent className='sm:hidden basis-1 pl-4' justify='end'>
-				<ThemeSwitch />
-				<NavbarMenuToggle />
+				<NavbarItem className='sm:hidden'>
+					<NavbarMenuToggle />
+				</NavbarItem>
 			</NavbarContent>
 
 			<NavbarMenu>
@@ -80,7 +74,7 @@ export const Navbar = () => {
 											? 'danger'
 											: 'foreground'
 								}
-								href='#'
+								href={item.href}
 								size='lg'>
 								{item.label}
 							</Link>
