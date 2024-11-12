@@ -18,7 +18,7 @@ function Testimonials() {
 	return (
 		<>
 			<div className='w-full relative px-3 sm:px-12 mt-20 rounded-xl animation-timeline animate-emergence max-w-5xl'>
-				<h2 className='text-3xl font-bold text-center'>Відгуки студентів</h2>
+				<h2 className='text-3xl font-bold text-center'>Відгуки Студентів</h2>
 				<Swiper
 					navigation={true}
 					autoplay={{

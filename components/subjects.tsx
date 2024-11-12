@@ -57,7 +57,7 @@ function Subjects() {
 	return (
 		<>
 			<div className='w-full mx-3 p-3 pb-0 mt-20 rounded-xl animation-timeline animate-emergence bg-[url("/book.png")] bg-contain bg-no-repeat bg-bottom'>
-				<h2 className='text-3xl font-bold text-center'>Ти вивчиш:</h2>
+				<h2 className='text-3xl font-bold text-center'>Ти Вивчиш:</h2>
 				<Swiper
 					autoplay={{
 						delay: 1500,

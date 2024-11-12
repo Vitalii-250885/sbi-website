@@ -1,3 +1,5 @@
+'use client'
+
 import {
 	Navbar as NextUINavbar,
 	NavbarContent,
@@ -16,10 +18,15 @@ import clsx from 'clsx'
 import { siteConfig } from '@/config/site'
 import { ThemeSwitch } from '@/components/theme-switch'
 import { Logo } from '@/components/icons'
+import React, { useState } from 'react'
 
 export const Navbar = () => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false)
+
 	return (
 		<NextUINavbar
+			isMenuOpen={isMenuOpen}
+			onMenuOpenChange={setIsMenuOpen}
 			maxWidth='xl'
 			className='fixed top-0 left-0 animate-emergence'>
 			<NavbarContent className='basis-1/5 sm:basis-full' justify='start'>

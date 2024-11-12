@@ -8,7 +8,7 @@ function NextSession() {
 			id='nextSession'
 			className='pt-20 px-6 flex flex-col items-center w-full sm:px-14 animation-timeline animate-emergence'>
 			<h2 className='text-center text-3xl font-bold mb-6 animation-timeline animate-emergence'>
-				Наступна сесія
+				Наступна Сесія
 			</h2>
 			<div className='flex flex-col lg:flex-row items-center gap-6 lg:items-stretch'>
 				<CalendarComponent />

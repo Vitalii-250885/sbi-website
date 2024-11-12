@@ -23,7 +23,7 @@ export default function Home() {
 						variant: 'shadow',
 					})}
 					href='#contacts'>
-					Дізнатися більше
+					Дізнатися Більше
 				</Link>
 			</div>
 			<Program />
