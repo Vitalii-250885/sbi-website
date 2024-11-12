@@ -21,17 +21,22 @@ import { Logo } from '@/components/icons'
 import React, { useState } from 'react'
 
 export const Navbar = () => {
-	const [isMenuOpen, setIsMenuOpen] = useState(false)
+	const [isOpen, setIsOpen] = useState(false)
+	const toggleMenu = () => setIsOpen(!isOpen)
+	const closeMenu = () => setIsOpen(false)
 
 	return (
 		<NextUINavbar
-			isMenuOpen={isMenuOpen}
-			onMenuOpenChange={setIsMenuOpen}
+			isMenuOpen={isOpen}
+			onMenuOpenChange={toggleMenu}
 			maxWidth='xl'
 			className='fixed top-0 left-0 animate-emergence'>
 			<NavbarContent className='basis-1/5 sm:basis-full' justify='start'>
 				<NavbarBrand as='li' className='gap-3 max-w-fit'>
-					<Link className='flex w-12 justify-start items-center gap-1' href='#'>
+					<Link
+						className='flex w-12 justify-start items-center gap-1'
+						href='#'
+						onClick={closeMenu}>
 						<Logo width={12} className='animate-emergence' />
 					</Link>
 				</NavbarBrand>
@@ -74,6 +79,7 @@ export const Navbar = () => {
 					{siteConfig.navMenuItems.map((item, index) => (
 						<NavbarMenuItem key={`${item}-${index}`}>
 							<Link
+								onClick={closeMenu}
 								color={
 									index === 2
 										? 'primary'
