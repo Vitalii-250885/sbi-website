@@ -5,7 +5,7 @@ import {
 	TableColumn,
 	TableHeader,
 	TableRow,
-} from '@nextui-org/react'
+} from '@nextui-org/table'
 import React from 'react'
 
 function SubjectsNextSession() {

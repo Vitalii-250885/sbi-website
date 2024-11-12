@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { RangeCalendar } from '@nextui-org/react'
+import { RangeCalendar } from '@nextui-org/calendar'
 import { CalendarDate } from '@internationalized/date'
 
 function CalendarComponent() {
