@@ -8,7 +8,6 @@ import ContactForm from '@/components/contactForm'
 import Program from '@/components/program'
 import Subjects from '@/components/subjects'
 import Testimonials from '@/components/testimonials'
-import CalendarComponent from '@/components/calendar'
 import NextSession from '@/components/nextSession'
 
 export default function Home() {
