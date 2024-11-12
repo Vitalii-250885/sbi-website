@@ -5,10 +5,6 @@ export const siteConfig = {
 	description: "Сайт Слов'янського Баптистського Інституту",
 	navItems: [
 		{
-			label: 'Бібліотека',
-			href: '#',
-		},
-		{
 			label: 'Наступна сесія',
 			href: '#nextSession',
 		},
@@ -18,10 +14,6 @@ export const siteConfig = {
 		},
 	],
 	navMenuItems: [
-		{
-			label: 'Бібліотека',
-			href: '#',
-		},
 		{
 			label: 'Наступна сесія',
 			href: '#nextSession',
