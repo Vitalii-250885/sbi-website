@@ -57,9 +57,10 @@ export const Navbar = () => {
 						Увійти
 					</Button>
 				</NavbarItem>
-				<NavbarItem className='sm:hidden'>
-					<NavbarMenuToggle />
-				</NavbarItem>
+			</NavbarContent>
+
+			<NavbarContent className='sm:hidden basis-1 pl-4' justify='end'>
+				<NavbarMenuToggle />
 			</NavbarContent>
 
 			<NavbarMenu>
