@@ -17,7 +17,7 @@ import testimonials from '../data/testimonials.json'
 function Testimonials() {
 	return (
 		<>
-			<div className='w-full mx-3 p-3 mt-20 rounded-xl animation-timeline animate-emergence'>
+			<div className='w-full mx-3 relative p-3 mt-20 rounded-xl animation-timeline animate-emergence'>
 				<h2 className='text-3xl font-bold text-center'>Відгуки студентів</h2>
 				<Swiper
 					autoplay={{
@@ -26,24 +26,26 @@ function Testimonials() {
 					}}
 					modules={[Autoplay]}
 					className='mySwiper'>
-					{testimonials.map(({ photo, firstName, lastName, article }) => (
-						<SwiperSlide>
-							<div className={css.slide}>
-								<div className={css['photo-name']}>
-									<Image
-										isBlurred
-										src={photo}
-										alt={firstName}
-										className={css.photo}
-									/>
-									<p className={css.name}>
-										{firstName} <br /> {lastName}
-									</p>
+					{testimonials.map(
+						({ photo, firstName, lastName, article }, index) => (
+							<SwiperSlide key={index}>
+								<div className={css.slide}>
+									<div className={css['photo-name']}>
+										<Image
+											isBlurred
+											src={photo}
+											alt={firstName}
+											className={css.photo}
+										/>
+										<p className={css.name}>
+											{firstName} <br /> {lastName}
+										</p>
+									</div>
+									<p className={css.text}>{article}</p>
 								</div>
-								<p className={css.text}>{article}</p>
-							</div>
-						</SwiperSlide>
-					))}
+							</SwiperSlide>
+						)
+					)}
 				</Swiper>
 			</div>
 		</>

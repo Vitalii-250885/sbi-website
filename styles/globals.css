@@ -46,3 +46,7 @@
 	display: block;
 	object-fit: cover;
 }
+
+.subjectSlide {
+	background-color: transparent;
+}
