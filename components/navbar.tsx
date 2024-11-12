@@ -45,7 +45,7 @@ export const Navbar = () => {
 				</ul>
 			</NavbarContent>
 
-			<NavbarContent className='flex' justify='end'>
+			<NavbarContent className='flex w-full' justify='end'>
 				<NavbarItem className='flex gap-2'>
 					<ThemeSwitch />
 				</NavbarItem>
@@ -57,10 +57,9 @@ export const Navbar = () => {
 						Увійти
 					</Button>
 				</NavbarItem>
-			</NavbarContent>
-
-			<NavbarContent className='sm:hidden basis-1 pl-4' justify='end'>
-				<NavbarMenuToggle />
+				<NavbarContent className='sm:hidden' justify='end'>
+					<NavbarMenuToggle />
+				</NavbarContent>
 			</NavbarContent>
 
 			<NavbarMenu>
