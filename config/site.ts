@@ -6,7 +6,7 @@ export const siteConfig = {
 	navItems: [
 		{
 			label: 'Бібліотека',
-			href: '/dashboard',
+			href: '#',
 		},
 		{
 			label: 'Календар',
@@ -19,12 +19,8 @@ export const siteConfig = {
 	],
 	navMenuItems: [
 		{
-			label: 'Увійти',
-			href: '/profile',
-		},
-		{
 			label: 'Бібліотека',
-			href: '/dashboard',
+			href: '#',
 		},
 		{
 			label: 'Календар',
