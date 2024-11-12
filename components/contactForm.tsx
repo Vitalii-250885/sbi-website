@@ -12,19 +12,25 @@ export default function ContactForm() {
 				Контакти
 			</h2>
 
-			<Link className='font-bold' color='foreground'>
+			<Link
+				className='font-bold animation-timeline animate-left'
+				color='foreground'>
 				<img src='/phone.png' alt='facebook' className='w-7 mr-2' />
 				+38 (068)-368-93-07
 			</Link>
-			<Link className='font-bold' color='foreground'>
+			<Link
+				className='font-bold animation-timeline animate-left'
+				color='foreground'>
 				<img src='/phone.png' alt='facebook' className='w-7 mr-2' />
 				+38 (099)-619-31-61
 			</Link>
-			<Link className='font-bold' color='foreground'>
+			<Link
+				className='font-bold animation-timeline animate-left'
+				color='foreground'>
 				<img src='/mail.png' alt='facebook' className='w-7 mr-2' />
 				sbi.in.ua@gmail.com
 			</Link>
-			<div className='flex mt-3'>
+			<div className='flex mt-3 animation-timeline animate-left'>
 				<Link className='mr-5' color='foreground'>
 					<img src='/facebook.png' alt='facebook' className='w-7' />
 				</Link>
