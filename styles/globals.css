@@ -44,6 +44,10 @@
 
 	background-color: rgba(148, 163, 184, 0.1);
 	border-radius: 20px;
+
+	@media screen and (min-width: 768px) {
+		padding: 24px 64px;
+	}
 }
 
 .swiper-slide img {
