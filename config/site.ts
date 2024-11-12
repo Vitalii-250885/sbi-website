@@ -9,8 +9,8 @@ export const siteConfig = {
 			href: '#',
 		},
 		{
-			label: 'Календар',
-			href: '#calendar',
+			label: 'Наступна сесія',
+			href: '#nextSession',
 		},
 		{
 			label: 'Контакти',
@@ -23,8 +23,8 @@ export const siteConfig = {
 			href: '#',
 		},
 		{
-			label: 'Календар',
-			href: '#calendar',
+			label: 'Наступна сесія',
+			href: '#nextSession',
 		},
 		{
 			label: 'Контакти',
