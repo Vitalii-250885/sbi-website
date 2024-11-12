@@ -14,6 +14,7 @@ function CalendarComponent() {
 				end: date.add({ days: 4 }),
 			}}
 			isReadOnly
+			className='animation-timeline animate-emergence'
 		/>
 	)
 }
