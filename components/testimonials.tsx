@@ -3,12 +3,12 @@
 import React from 'react'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay } from 'swiper/modules'
+import { Autoplay, Navigation } from 'swiper/modules'
 
 import { Image } from '@nextui-org/image'
 
 import 'swiper/css'
-import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 
 import css from './testimonials.module.css'
 
@@ -17,14 +17,15 @@ import testimonials from '../data/testimonials.json'
 function Testimonials() {
 	return (
 		<>
-			<div className='w-full mx-3 relative p-3 mt-20 rounded-xl animation-timeline animate-emergence'>
+			<div className='w-full relative px-3 sm:px-12 mt-20 rounded-xl animation-timeline animate-emergence'>
 				<h2 className='text-3xl font-bold text-center'>Відгуки студентів</h2>
 				<Swiper
+					navigation={true}
 					autoplay={{
-						delay: 8000,
+						delay: 20000,
 						disableOnInteraction: true,
 					}}
-					modules={[Autoplay]}
+					modules={[Autoplay, Navigation]}
 					className='mySwiper'>
 					{testimonials.map(
 						({ photo, firstName, lastName, article }, index) => (
