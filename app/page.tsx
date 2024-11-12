@@ -1,7 +1,6 @@
 import { Link } from '@nextui-org/link'
 import { button as buttonStyles } from '@nextui-org/theme'
 
-import { Logo } from '@/components/icons'
 import Hero from '@/components/hero'
 import ContactForm from '@/components/contactForm'
 import Program from '@/components/program'

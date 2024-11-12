@@ -12,45 +12,26 @@ export default function ContactForm() {
 				Контакти
 			</h2>
 
-			<Accordion
-				variant='shadow'
-				className='animation-timeline animate-emergence'>
-				<AccordionItem
-					key='1'
-					title='Номери телефонів'
-					className='animation-timeline animate-emergence'>
-					<Link className='font-bold' color='foreground'>
-						<img src='/phone.png' alt='facebook' className='w-7 mr-2' />
-						+38 (068)-368-93-07
-					</Link>
-					<Link className='font-bold' color='foreground'>
-						<img src='/phone.png' alt='facebook' className='w-7 mr-2' />
-						+38 (099)-619-31-61
-					</Link>
-				</AccordionItem>
-				<AccordionItem
-					key='2'
-					title='Електронна пошта'
-					className='animation-timeline animate-emergence'>
-					<Link className='font-bold' color='foreground'>
-						<img src='/mail.png' alt='facebook' className='w-7 mr-2' />
-						sbi.in.ua@gmail.com
-					</Link>
-				</AccordionItem>
-				<AccordionItem
-					key='3'
-					title='Соціальні мережі'
-					className='animation-timeline animate-emergence'>
-					<Link key={'1'} className='mr-5' color='foreground'>
-						<img src='/facebook.png' alt='facebook' className='w-7 mr-2' />
-						<span className='font-bold'>sbiukraine</span>
-					</Link>
-					<Link key={'2'} color='foreground'>
-						<img src='/instagram.png' alt='facebook' className='w-7 mr-2' />
-						<span className='font-bold'>sbiukr</span>
-					</Link>
-				</AccordionItem>
-			</Accordion>
+			<Link className='font-bold' color='foreground'>
+				<img src='/phone.png' alt='facebook' className='w-7 mr-2' />
+				+38 (068)-368-93-07
+			</Link>
+			<Link className='font-bold' color='foreground'>
+				<img src='/phone.png' alt='facebook' className='w-7 mr-2' />
+				+38 (099)-619-31-61
+			</Link>
+			<Link className='font-bold' color='foreground'>
+				<img src='/mail.png' alt='facebook' className='w-7 mr-2' />
+				sbi.in.ua@gmail.com
+			</Link>
+			<div className='flex mt-3'>
+				<Link className='mr-5' color='foreground'>
+					<img src='/facebook.png' alt='facebook' className='w-7' />
+				</Link>
+				<Link color='foreground'>
+					<img src='/instagram.png' alt='facebook' className='w-7' />
+				</Link>
+			</div>
 
 			<h3 className='text-2xl text-center font-bold mt-5 animation-timeline animate-emergence'>
 				Напишіть нам
@@ -67,16 +48,16 @@ export default function ContactForm() {
 			<Input
 				variant='flat'
 				size='lg'
-				type='email'
-				label='Електронна пошта'
+				type='phone'
+				label='Номер телефону'
 				isRequired
 				className='animation-timeline animate-emergence'
 			/>
 			<Input
 				variant='flat'
 				size='lg'
-				type='phone'
-				label='Номер телефону'
+				type='email'
+				label='Електронна пошта'
 				isRequired
 				className='animation-timeline animate-emergence'
 			/>

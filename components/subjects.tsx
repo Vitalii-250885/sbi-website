@@ -67,7 +67,7 @@ function Subjects() {
 					className='mySwiper'>
 					{subjects.map((subject, index) => (
 						<SwiperSlide key={index} className='subjectSlide'>
-							<div className='text-2xl text-center'>{subject}</div>
+							<div className='text-2xl sm:text-3xl text-center'>{subject}</div>
 						</SwiperSlide>
 					))}
 				</Swiper>

@@ -24,11 +24,13 @@ export const Navbar = () => {
 			className='fixed top-0 left-0 animate-emergence'>
 			<NavbarContent className='basis-1/5 sm:basis-full' justify='start'>
 				<NavbarBrand as='li' className='gap-3 max-w-fit'>
-					<NextLink className='flex justify-start items-center gap-1' href='#'>
+					<NextLink
+						className='flex w-12 justify-start items-center gap-1'
+						href='#'>
 						<Logo width={12} className='animate-emergence' />
 					</NextLink>
 				</NavbarBrand>
-				<ul className='hidden lg:flex gap-4 justify-start ml-2'>
+				<ul className='hidden sm:flex gap-4 justify-start ml-2'>
 					{siteConfig.navItems.map(item => (
 						<NavbarItem key={item.href}>
 							<NextLink
@@ -51,12 +53,12 @@ export const Navbar = () => {
 				<NavbarItem className='hidden sm:flex gap-2'>
 					<ThemeSwitch />
 				</NavbarItem>
-				<NavbarItem className='hidden md:flex'>
+				<NavbarItem className='hidden sm:flex'>
 					<Button
 						className='text-sm font-normal text-default-600 bg-default-100'
-						startContent='icon'
+						startContent='сюда можно вставить icon'
 						variant='flat'>
-						Кабінет студента
+						Увійти
 					</Button>
 				</NavbarItem>
 			</NavbarContent>
