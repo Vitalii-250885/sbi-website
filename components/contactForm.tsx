@@ -36,10 +36,13 @@ export default function ContactForm() {
 						sbi.in.ua@gmail.com
 					</Link>
 					<div className='flex mt-3 animation-timeline animate-left'>
-						<Link className='mr-5' color='foreground'>
+						<Link
+							className='mr-5'
+							color='foreground'
+							href='https://www.facebook.com/sbiukraine?locale=uk_UA'>
 							<img src='/facebook.png' alt='facebook' className='w-7' />
 						</Link>
-						<Link color='foreground'>
+						<Link color='foreground' href='https://www.instagram.com/sbiukr/'>
 							<img src='/instagram.png' alt='facebook' className='w-7' />
 						</Link>
 					</div>
