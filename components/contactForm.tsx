@@ -15,18 +15,21 @@ export default function ContactForm() {
 			<div className='block md:flex'>
 				<div className='flex flex-col gap-3 md:w-80'>
 					<Link
+						href='tel:+380683689307'
 						className='font-bold animation-timeline animate-left'
 						color='foreground'>
 						<img src='/phone.png' alt='facebook' className='w-7 mr-2' />
 						+38 (068)-368-93-07
 					</Link>
 					<Link
+						href='tel:+380996193161'
 						className='font-bold animation-timeline animate-left'
 						color='foreground'>
 						<img src='/phone.png' alt='facebook' className='w-7 mr-2' />
 						+38 (099)-619-31-61
 					</Link>
 					<Link
+						href='mailto:sbi.in.ua@gmail.com'
 						className='font-bold animation-timeline animate-left'
 						color='foreground'>
 						<img src='/mail.png' alt='facebook' className='w-7 mr-2' />
