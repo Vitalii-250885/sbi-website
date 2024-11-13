@@ -20,6 +20,7 @@ function Testimonials() {
 			<div className='w-full relative px-3 sm:px-12 mt-20 rounded-xl animation-timeline animate-emergence max-w-5xl'>
 				<h2 className='text-3xl font-bold text-center'>Відгуки Студентів</h2>
 				<Swiper
+					loop={true}
 					navigation={true}
 					autoplay={{
 						delay: 20000,
