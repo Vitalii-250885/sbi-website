@@ -6,7 +6,9 @@ import { Link } from '@nextui-org/link'
 
 export default function ContactForm() {
 	return (
-		<div id='contacts' className='flex w-full px-6 pt-20 pb-36 flex-col gap-4'>
+		<div
+			id='contacts'
+			className='flex w-full px-6 sm:px-12 pt-20 pb-36 flex-col gap-4'>
 			<h2 className='text-3xl font-bold text-center animation-timeline animate-emergence'>
 				Контакти
 			</h2>

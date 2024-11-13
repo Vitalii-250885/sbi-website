@@ -62,7 +62,7 @@ function Subjects() {
 
 	return (
 		<>
-			<div className='w-full mx-3 p-3 pb-0 mt-20 animation-timeline animate-emergence'>
+			<div className='w-full mx-3 p-3 max-w-5xl sm:px-12 pb-0 mt-20 animation-timeline animate-emergence'>
 				<h2 className='text-3xl mb-6 font-bold text-center'>Ти Вивчиш:</h2>
 				<Accordion variant='shadow'>
 					<AccordionItem
@@ -74,7 +74,7 @@ function Subjects() {
 							</span>
 						}>
 						{doctrines.map((subject, index) => (
-							<div key={index} className='text-lg sm:text-xl'>
+							<div key={index} className='text-lg'>
 								{subject}
 							</div>
 						))}
@@ -88,7 +88,7 @@ function Subjects() {
 							</span>
 						}>
 						{service.map((subject, index) => (
-							<div key={index} className='text-lg sm:text-xl'>
+							<div key={index} className='text-lg'>
 								{subject}
 							</div>
 						))}
@@ -102,7 +102,7 @@ function Subjects() {
 							</span>
 						}>
 						{oldTestament.map((subject, index) => (
-							<div key={index} className='text-lg sm:text-xl'>
+							<div key={index} className='text-lg'>
 								{subject}
 							</div>
 						))}
@@ -116,7 +116,7 @@ function Subjects() {
 							</span>
 						}>
 						{newTestament.map((subject, index) => (
-							<div key={index} className='text-lg sm:text-xl'>
+							<div key={index} className='text-lg'>
 								{subject}
 							</div>
 						))}
