@@ -3,6 +3,7 @@
 import React from 'react'
 
 import { Accordion, AccordionItem } from '@nextui-org/accordion'
+import { title } from './primitives'
 
 function Subjects() {
 	const doctrines = [
@@ -64,7 +65,14 @@ function Subjects() {
 			<div className='w-full mx-3 p-3 pb-0 mt-20 animation-timeline animate-emergence'>
 				<h2 className='text-3xl mb-6 font-bold text-center'>Ти Вивчиш:</h2>
 				<Accordion variant='shadow'>
-					<AccordionItem key='1' aria-label='Доктрини' title='Доктрини'>
+					<AccordionItem
+						key='1'
+						aria-label='Доктрини'
+						title={
+							<span className={title({ size: 'xs', color: 'blue' })}>
+								Доктрини
+							</span>
+						}>
 						{doctrines.map((subject, index) => (
 							<div key={index} className='text-lg sm:text-xl'>
 								{subject}
@@ -74,7 +82,11 @@ function Subjects() {
 					<AccordionItem
 						key='2'
 						aria-label='Служіння в церкві та особистий духовний ріст'
-						title='Служіння в церкві та особистий духовний ріст'>
+						title={
+							<span className={title({ size: 'xs', color: 'blue' })}>
+								Служіння в церкві та особистий духовний ріст
+							</span>
+						}>
 						{service.map((subject, index) => (
 							<div key={index} className='text-lg sm:text-xl'>
 								{subject}
@@ -84,7 +96,11 @@ function Subjects() {
 					<AccordionItem
 						key='3'
 						aria-label='Книги Старого Заповіту'
-						title='Книги Старого Заповіту'>
+						title={
+							<span className={title({ size: 'xs', color: 'blue' })}>
+								Книги Старого Заповіту
+							</span>
+						}>
 						{oldTestament.map((subject, index) => (
 							<div key={index} className='text-lg sm:text-xl'>
 								{subject}
@@ -94,7 +110,11 @@ function Subjects() {
 					<AccordionItem
 						key='4'
 						aria-label='Книги Нового Заповіту'
-						title='Книги Нового Заповіту'>
+						title={
+							<span className={title({ size: 'xs', color: 'blue' })}>
+								Книги Нового Заповіту
+							</span>
+						}>
 						{newTestament.map((subject, index) => (
 							<div key={index} className='text-lg sm:text-xl'>
 								{subject}
