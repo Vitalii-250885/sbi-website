@@ -23,7 +23,7 @@ function MailForm({ setIsSubmitting }: MailFormProps) {
 		message: '',
 	}
 
-	const FORMSPREE_URL = process.env.REACT_APP_FORMSPREE_URL
+	const FORMSPREE_URL = process.env.NEXT_FORMSPREE_URL
 
 	const handleSubmit = (
 		values: ValuesTypes,
@@ -31,7 +31,6 @@ function MailForm({ setIsSubmitting }: MailFormProps) {
 	) => {
 		try {
 			axios.post(FORMSPREE_URL, values)
-			console.log('success')
 		} catch (error) {
 			console.log('Error!!!', error)
 		}
