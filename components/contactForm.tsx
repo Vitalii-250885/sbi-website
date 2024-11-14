@@ -3,8 +3,11 @@
 import { Link } from '@nextui-org/link'
 import { title } from './primitives'
 import MailForm from './form'
+import { useState } from 'react'
 
 export default function ContactForm() {
+	const [isSubmitting, setIsSubmitting] = useState(false)
+
 	return (
 		<div
 			id='contacts'
@@ -47,7 +50,7 @@ export default function ContactForm() {
 						</Link>
 					</div>
 				</div>
-				{false ? (
+				{isSubmitting ? (
 					<div className='flex flex-col items-center justify-center h-[25.4rem] sm:h-[26rem]'>
 						<p className={title({ color: 'green', size: 'md' })}>Дякуємо!</p>
 						<p className='animate-emergence mt-6 text-center'>
@@ -56,7 +59,7 @@ export default function ContactForm() {
 						</p>
 					</div>
 				) : (
-					<MailForm />
+					<MailForm setIsSubmitting={setIsSubmitting} />
 				)}
 			</div>
 		</div>

@@ -1,48 +1,35 @@
 import { Button } from '@nextui-org/button'
-import { Formik, Form, Field, ErrorMessage } from 'formik'
+import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik'
 
 import * as Yup from 'yup'
 
-function MailForm() {
-	const handleSubmit = (values: Object, actions: Object) => {
-		console.log(values)
-		// actions.resetForm()
-		// const form = e.currentTarget
+interface MailFormProps {
+	setIsSubmitting: (value: boolean) => void
+}
 
-		// if (name !== '' && phoneNumber !== '' && email !== '') {
-		// 	setIsSubmitting(true)
-		// 	setFormData({
-		// 		name,
-		// 		phoneNumber,
-		// 		email,
-		// 		message,
-		// 	})
-		// 	form.reset()
-		// 	setTimeout(() => setIsSubmitting(false), 10000)
-		// }
+interface ValuesTypes {
+	name: string
+	phone: string
+	email: string
+	message: string
+}
 
-		// if (name === '') {
-		// 	setIsNameValid(false)
-		// }
-		// if (phoneNumber === '') {
-		// 	setIsPhoneNumberValid(false)
-		// }
-		// if (email === '') {
-		// 	setIsMailValid(false)
-		// }
-
-		// setTimeout(() => {
-		// 	setIsNameValid(true)
-		// 	setIsPhoneNumberValid(true)
-		// 	setIsMailValid(true)
-		// }, 2000)
-	}
-
+function MailForm({ setIsSubmitting }: MailFormProps) {
 	const initialValues = {
 		name: '',
 		phone: '',
 		email: '',
 		message: '',
+	}
+
+	const handleSubmit = (
+		values: ValuesTypes,
+		actions: FormikHelpers<ValuesTypes>
+	) => {
+		console.log(values)
+		actions.resetForm()
+		setIsSubmitting(true)
+		setTimeout(() => setIsSubmitting(false), 10000)
 	}
 
 	const FeedbackSchema = Yup.object().shape({
