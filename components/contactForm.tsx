@@ -1,63 +1,10 @@
 'use client'
 
-import { Button } from '@nextui-org/button'
-import { Input, Textarea } from '@nextui-org/input'
 import { Link } from '@nextui-org/link'
-import { useState } from 'react'
 import { title } from './primitives'
+import MailForm from './form'
 
 export default function ContactForm() {
-	const [isSubmitting, setIsSubmitting] = useState(false)
-	const [formData, setFormData] = useState({
-		name: '',
-		phoneNumber: '',
-		email: '',
-		message: '',
-	})
-	const [isNameValid, setIsNameValid] = useState(true)
-	const [isPhoneNumberValid, setIsPhoneNumberValid] = useState(true)
-	const [isMailValid, setIsMailValid] = useState(true)
-
-	console.log(formData)
-
-	const handleSubmit = (e: React.FormEvent) => {
-		e.preventDefault()
-		const form = e.currentTarget
-
-		const name = e.target[0].value
-		const phoneNumber = e.target[1].value
-		const email = e.target[2].value
-		const message = e.target[3].value
-
-		if (name !== '' && phoneNumber !== '' && email !== '') {
-			setIsSubmitting(true)
-			setFormData({
-				name,
-				phoneNumber,
-				email,
-				message,
-			})
-			form.reset()
-			setTimeout(() => setIsSubmitting(false), 10000)
-		}
-
-		if (name === '') {
-			setIsNameValid(false)
-		}
-		if (phoneNumber === '') {
-			setIsPhoneNumberValid(false)
-		}
-		if (email === '') {
-			setIsMailValid(false)
-		}
-
-		setTimeout(() => {
-			setIsNameValid(true)
-			setIsPhoneNumberValid(true)
-			setIsMailValid(true)
-		}, 2000)
-	}
-
 	return (
 		<div
 			id='contacts'
@@ -100,7 +47,7 @@ export default function ContactForm() {
 						</Link>
 					</div>
 				</div>
-				{isSubmitting ? (
+				{false ? (
 					<div className='flex flex-col items-center justify-center h-[25.4rem] sm:h-[26rem]'>
 						<p className={title({ color: 'green', size: 'md' })}>Дякуємо!</p>
 						<p className='animate-emergence mt-6 text-center'>
@@ -109,49 +56,7 @@ export default function ContactForm() {
 						</p>
 					</div>
 				) : (
-					<form
-						onSubmit={handleSubmit}
-						className='flex flex-col gap-3 mt-6 md:mt-0 w-full'>
-						<Input
-							variant='flat'
-							size='lg'
-							type='text'
-							color={isNameValid ? 'default' : 'danger'}
-							label="Ім'я"
-							isRequired
-							className='animation-timeline animate-emergence'
-						/>
-						<Input
-							variant='flat'
-							size='lg'
-							type='phone'
-							color={isPhoneNumberValid ? 'default' : 'danger'}
-							label='Номер телефону'
-							isRequired
-							className='animation-timeline animate-emergence'
-						/>
-						<Input
-							variant='flat'
-							size='lg'
-							type='email'
-							color={isMailValid ? 'default' : 'danger'}
-							label='Електронна пошта'
-							isRequired
-							className='animation-timeline animate-emergence'
-						/>
-						<Textarea
-							variant='flat'
-							label='Повідомлення'
-							className='animation-timeline animate-emergence'
-						/>
-						<Button
-							type='submit'
-							color='primary'
-							variant='solid'
-							className='animation-timeline animate-emergence'>
-							Надіслати
-						</Button>
-					</form>
+					<MailForm />
 				)}
 			</div>
 		</div>
