@@ -4,7 +4,7 @@ import { Formik, Form, Field } from 'formik'
 function MailForm() {
 	const handleSubmit = (values: Object, actions: Object) => {
 		console.log(values)
-		actions.resetForm()
+		// actions.resetForm()
 		// const form = e.currentTarget
 
 		// if (name !== '' && phoneNumber !== '' && email !== '') {
