@@ -23,7 +23,7 @@ function MailForm({ setIsSubmitting }: MailFormProps) {
 		message: '',
 	}
 
-	const FORMSPREE_URL = 'https://formspree.io/f/xeoqknew'
+	const FORMSPREE_URL = process.env.REACT_APP_FORMSPREE_URL
 
 	const handleSubmit = (
 		values: ValuesTypes,
@@ -117,6 +117,7 @@ function MailForm({ setIsSubmitting }: MailFormProps) {
 				</div>
 				<Button
 					type='submit'
+					radius='full'
 					color='primary'
 					variant='shadow'
 					className='animation-timeline animate-emergence w-40 self-center'>
