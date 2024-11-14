@@ -63,3 +63,8 @@
 		margin-top: 0px;
 	}
 }
+
+input,
+textarea {
+	outline: none;
+}
