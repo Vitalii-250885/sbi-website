@@ -1,5 +1,6 @@
 import { Button } from '@nextui-org/button'
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik'
+import axios from 'axios'
 
 import * as Yup from 'yup'
 
@@ -22,11 +23,18 @@ function MailForm({ setIsSubmitting }: MailFormProps) {
 		message: '',
 	}
 
+	const FORMSPREE_URL = 'https://formspree.io/f/xeoqknew'
+
 	const handleSubmit = (
 		values: ValuesTypes,
 		actions: FormikHelpers<ValuesTypes>
 	) => {
-		console.log(values)
+		try {
+			axios.post(FORMSPREE_URL, values)
+			console.log('success')
+		} catch (error) {
+			console.log('Error!!!', error)
+		}
 		actions.resetForm()
 		setIsSubmitting(true)
 		setTimeout(() => setIsSubmitting(false), 10000)
