@@ -21,7 +21,7 @@ function SubjectsNextSession() {
 				<TableBody>
 					<TableRow key='1'>
 						<TableCell>Вчення Біблії про гріх і людину</TableCell>
-						<TableCell>Абрамцов Олексій</TableCell>
+						<TableCell>Абрамцов Олексій Сергійович</TableCell>
 					</TableRow>
 					<TableRow key='2'>
 						<TableCell>Вивчення книги пророка Даниїла</TableCell>
