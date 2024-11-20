@@ -11,7 +11,8 @@ function ModalLogIn() {
 						variant='flat'>
 						Увійти
 			</Button>
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange} placement='top'
+      >
         <ModalContent>
           {(onClose) => (
             <>
