@@ -19,6 +19,7 @@ import { siteConfig } from '@/config/site'
 import { ThemeSwitch } from '@/components/theme-switch'
 import { Logo } from '@/components/icons'
 import React, { useState } from 'react'
+import ModalLogIn from './modalLogIn'
 
 export const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false)
@@ -62,12 +63,7 @@ export const Navbar = () => {
 					<ThemeSwitch />
 				</NavbarItem>
 				<NavbarItem>
-					<Button
-						className='text-sm font-normal text-default-600 bg-default-100'
-						startContent='сюда можно вставить icon'
-						variant='flat'>
-						Увійти
-					</Button>
+					<ModalLogIn />
 				</NavbarItem>
 				<NavbarContent className='sm:hidden' justify='end'>
 					<NavbarMenuToggle />
