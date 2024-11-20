@@ -23,7 +23,7 @@ function MailForm({ setIsSubmitting }: MailFormProps) {
 		message: '',
 	}
 
-	const FORMSPREE_URL = process.env.NEXT_FORMSPREE_URL
+	const FORMSPREE_URL: string = process.env.NEXT_FORMSPREE_URL!
 
 	const handleSubmit = (
 		values: ValuesTypes,
