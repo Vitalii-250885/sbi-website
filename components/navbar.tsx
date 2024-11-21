@@ -62,7 +62,7 @@ export const NavbarApp = () => {
 			<NavbarContent justify='end'>
 				<ModalLogIn />
 				<ThemeSwitch />
-				<NavbarMenuToggle />
+				<NavbarMenuToggle className='sm:hidden' />
 			</NavbarContent>
 
 			<NavbarMenu>
