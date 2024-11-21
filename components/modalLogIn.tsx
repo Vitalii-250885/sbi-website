@@ -17,16 +17,18 @@ export default function App() {
               <ModalHeader className="flex flex-col gap-1">Вхід в особистий кабінет</ModalHeader>
               <ModalBody>
                 <Input
-                  autoFocus
+                  name="email"
+                  type="email"
                   label="Email"
-                  placeholder="Введіть свій email"
-                  variant="bordered"
+                  radius='lg'
+                  className="border-2 border-zinc-500 border-opacity-20 focus-within:border-blue-500 h-14 rounded-2xl bg-zinc-500 bg-opacity-20"
                 />
                 <Input
+                  name="password"
                   label="Пароль"
-                  placeholder="Введіть свій пароль"
                   type="password"
-                  variant="bordered"
+                  radius='lg'
+                  className="border-2 border-zinc-500 border-opacity-20 focus-within:border-blue-500 h-14 rounded-2xl bg-zinc-500 bg-opacity-20"
                 />
                 <div className="flex py-2 px-1 justify-between">
                   <Checkbox
