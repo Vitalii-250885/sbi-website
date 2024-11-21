@@ -57,7 +57,6 @@ export const Navbar = () => {
 					))}
 				</ul>
 			</NavbarContent>
-
 			<NavbarContent className='flex w-full' justify='end'>
 				<NavbarItem className='flex gap-2'>
 					<ThemeSwitch />
