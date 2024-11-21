@@ -9,6 +9,8 @@ import Program from '@/components/program'
 import Subjects from '@/components/subjects'
 import Testimonials from '@/components/testimonials'
 import NextSession from '@/components/nextSession'
+import ModalLogIn from '@/components/modalLogIn'
+
 
 export default function Home() {
 	return (

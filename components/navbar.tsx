@@ -1,7 +1,7 @@
 'use client'
 
 import {
-	Navbar as NextUINavbar,
+	Navbar,
 	NavbarContent,
 	NavbarMenu,
 	NavbarMenuToggle,
@@ -21,17 +21,17 @@ import { Logo } from '@/components/icons'
 import React, { useState } from 'react'
 import ModalLogIn from './modalLogIn'
 
-export const Navbar = () => {
-	const [isOpen, setIsOpen] = useState(false)
-	const toggleMenu = () => setIsOpen(!isOpen)
-	const closeMenu = () => setIsOpen(false)
+export const NavbarApp = () => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false)
+	const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
+	const closeMenu = () => setIsMenuOpen(false)
 
 	return (
-		<NextUINavbar
-			isMenuOpen={isOpen}
+		<Navbar
+			isMenuOpen={isMenuOpen}
 			onMenuOpenChange={toggleMenu}
 			maxWidth='xl'
-			className='fixed top-0 left-0 animate-emergence'>
+			className='fixed top-0 left-0 animate-emergence z-10'>
 			<NavbarContent className='basis-1/5 sm:basis-full' justify='start'>
 				<NavbarBrand as='li' className='gap-3 max-w-fit'>
 					<Link
@@ -41,6 +41,7 @@ export const Navbar = () => {
 						<Logo width={12} className='animate-emergence' />
 					</Link>
 				</NavbarBrand>
+				
 				<ul className='hidden sm:flex gap-4 justify-start ml-2'>
 					{siteConfig.navItems.map(item => (
 						<NavbarItem key={item.href}>
@@ -57,16 +58,11 @@ export const Navbar = () => {
 					))}
 				</ul>
 			</NavbarContent>
-			<NavbarContent className='flex w-full' justify='end'>
-				<NavbarItem className='flex gap-2'>
-					<ThemeSwitch />
-				</NavbarItem>
-				<NavbarItem>
-					<ModalLogIn />
-				</NavbarItem>
-				<NavbarContent className='sm:hidden' justify='end'>
-					<NavbarMenuToggle />
-				</NavbarContent>
+
+			<NavbarContent justify='end'>
+				<ModalLogIn />
+				<ThemeSwitch />
+				<NavbarMenuToggle />
 			</NavbarContent>
 
 			<NavbarMenu>
@@ -90,6 +86,6 @@ export const Navbar = () => {
 					))}
 				</div>
 			</NavbarMenu>
-		</NextUINavbar>
+		</Navbar>
 	)
 }
