@@ -5,7 +5,7 @@ export default function App() {
 
   return (
     <>
-      <Button onPress={onOpen} color="primary">Увійти</Button>
+      {/* <Button onPress={onOpen} color="primary">Увійти</Button> */}
       <Modal
         isOpen={isOpen}
         onOpenChange={onOpenChange}
