@@ -23,5 +23,34 @@ export const siteConfig = {
 			href: '#contacts',
 		},
 	],
+	navUserItems: [
+		{
+			label: 'На головну сторінку',
+			href: '/',
+		},
+		{
+			label: 'Пройдені предмети',
+			href: '#',
+		},
+		{
+			label: 'Бібліотека',
+			href: '#',
+		},
+	],
+	navMenuUserItems: [
+		{
+			label: 'На головну сторінку',
+			href: '/',
+		},
+		{
+			label: 'Пройдені предмети',
+			href: '#',
+		},
+		{
+			label: 'Бібліотека',
+			href: '#',
+		},
+	],
+
 	links: {},
 }

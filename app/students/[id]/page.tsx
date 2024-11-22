@@ -1,12 +1,15 @@
 import React from 'react'
+import { NavbarUser } from '@/components/navbarUser'
+import Student from '@/components/student'
 
-export interface PageProps {
-  params: {id: string };
-}
+export interface PageProps {}
 
-function Page({ params }: PageProps) {
+function Page({}: PageProps) {
   return (
-    <div>Student Page ({ params.id })</div>
+    <>
+      <NavbarUser />
+      <Student />
+    </>
   )
 }
 

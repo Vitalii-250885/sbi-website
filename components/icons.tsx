@@ -6,7 +6,7 @@ export const Logo: React.FC<IconSvgProps> = ({
 	width,
 	height,
 	...props
-}: IconSvgProps) => <img src='logo.png' alt='logo' className={`w-${width}`} />
+}: IconSvgProps) => <img src='/logo.png' alt='logo' className={`w-${width}`} />
 
 export const MoonFilledIcon = ({
 	size = 24,
