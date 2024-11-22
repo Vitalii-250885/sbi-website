@@ -24,19 +24,19 @@ export default function SubjectTable() {
             <TableCell>5</TableCell>
           </TableRow>
           <TableRow key="2">
-            <TableCell>Zoey Lang</TableCell>
-            <TableCell>Technical Lead</TableCell>
-            <TableCell>Paused</TableCell>
+            <TableCell>Біблійна етика</TableCell>
+            <TableCell>5</TableCell>
+            <TableCell>5</TableCell>
           </TableRow>
           <TableRow key="3">
-            <TableCell>Jane Fisher</TableCell>
-            <TableCell>Senior Developer</TableCell>
-            <TableCell>Active</TableCell>
+            <TableCell>Огляд Старого Заповіту</TableCell>
+            <TableCell>5</TableCell>
+            <TableCell>5</TableCell>
           </TableRow>
           <TableRow key="4">
-            <TableCell>William Howard</TableCell>
-            <TableCell>Community Manager</TableCell>
-            <TableCell>Vacation</TableCell>
+            <TableCell>Послання до Римлян</TableCell>
+            <TableCell>5</TableCell>
+            <TableCell>5</TableCell>
           </TableRow>
         </TableBody>
       </Table>
