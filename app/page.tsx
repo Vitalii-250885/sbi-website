@@ -9,11 +9,13 @@ import Program from '@/components/program'
 import Subjects from '@/components/subjects'
 import Testimonials from '@/components/testimonials'
 import NextSession from '@/components/nextSession'
-import ModalLogIn from '@/components/modalLogIn'
+import { NavbarApp } from '@/components/navbar'
 
 
 export default function Home() {
 	return (
+		<>
+		<NavbarApp />
 		<section className='flex flex-col items-center justify-center gap-4 pt-8'>
 			<img src='logo.png' alt='logo' className='w-56 animate-emergence' />
 			<Hero />
@@ -34,5 +36,6 @@ export default function Home() {
 			<Testimonials />
 			<ContactForm />
 		</section>
+		</>
 	)
 }
