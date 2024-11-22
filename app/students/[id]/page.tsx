@@ -1,9 +1,13 @@
 import React from 'react'
 
-function page() {
+export interface PageProps {
+  params: {id: string };
+}
+
+function Page({ params }: PageProps) {
   return (
-    <div>page</div>
+    <div>Student Page ({ params.id })</div>
   )
 }
 
-export default page
+export default Page
