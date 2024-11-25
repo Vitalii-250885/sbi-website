@@ -160,9 +160,9 @@ export default function SubjectTable() {
       >
         <TableHeader>
           <TableColumn className="w-2/12">Дата</TableColumn>
-          <TableColumn className="w-8/12">Предмет</TableColumn>
-          <TableColumn className="w-1/12">Оцінка екзамен</TableColumn>
-          <TableColumn className="w-1/12">Оцінка Д/З</TableColumn>
+          <TableColumn className="w-6/12">Предмет</TableColumn>
+          <TableColumn className="w-2/12">Оцінка екзамен</TableColumn>
+          <TableColumn className="w-2/12">Оцінка Д/З</TableColumn>
         </TableHeader>
         <TableBody>
           {subjects.map(subject => (
