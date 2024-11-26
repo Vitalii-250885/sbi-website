@@ -153,6 +153,8 @@ export default function SubjectTable() {
   return (
     <div className="flex flex-col gap-3 pt-10 px-3">
       <h3 className="text-center font-bold">Пройдені предмети</h3>
+      <p>Пройдено сесій:</p>
+      <p>Залишилось сесій:</p>
       <Table
         selectionMode="single"
         defaultSelectedKeys={["2"]}
