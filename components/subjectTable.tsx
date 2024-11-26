@@ -1,5 +1,7 @@
-import React from "react";
-import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell} from "@nextui-org/react";
+import React, { useEffect, useState } from "react";
+import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Chip} from "@nextui-org/react";
+import { title } from "./primitives";
+import clsx from "clsx";
 
 
 export default function SubjectTable() {
@@ -150,29 +152,47 @@ export default function SubjectTable() {
     },
   ]
 
+  const [quantitySession, setQuantitySession ] = useState(0)
+
+  useEffect(() => {
+    setQuantitySession(subjects.length / 2)
+  }, [])
+
   return (
-    <div className="flex flex-col gap-3 pt-10 px-3">
-      <h3 className="text-center font-bold">Пройдені предмети</h3>
-      <p>Пройдено сесій:</p>
-      <p>Залишилось сесій:</p>
+    <div id="subjects" className="flex flex-col gap-3 pt-20 px-3">
+      <h3 className={clsx(title({ size: 'sm', color: 'blue' }), 'text-center')}>Пройдені предмети</h3>
+      <div className="flex gap-3 mt-3">
+      <Chip
+        variant="faded"
+        color="success"
+      >
+        Пройдено сесій: {quantitySession}
+      </Chip>
+      <Chip
+        variant="faded"
+        color="warning"
+      >
+        Залишилось сесій: {16 - quantitySession}
+      </Chip>
+      </div>
       <Table
         selectionMode="single"
         defaultSelectedKeys={["2"]}
         aria-label="Пройдені предмети"
       >
         <TableHeader>
-          <TableColumn className="w-2/12">Дата</TableColumn>
-          <TableColumn className="w-6/12">Предмет</TableColumn>
-          <TableColumn className="w-2/12">Оцінка екзамен</TableColumn>
-          <TableColumn className="w-2/12">Оцінка Д/З</TableColumn>
+          <TableColumn className="w-2/12 text-center">Дата</TableColumn>
+          <TableColumn className="w-6/12 text-center">Предмет</TableColumn>
+          <TableColumn className="w-2/12 text-center">Екзамен</TableColumn>
+          <TableColumn className="w-2/12 text-center">Д/З</TableColumn>
         </TableHeader>
         <TableBody>
-          {subjects.map(subject => (
+          {subjects.map((subject) => (
             <TableRow key={subject.subject}>
             <TableCell>{subject.date}</TableCell>
             <TableCell>{subject.subject}</TableCell>
-            <TableCell>{subject.markEx}</TableCell>
-            <TableCell>{subject.markHW}</TableCell>
+            <TableCell className="text-center">{subject.markEx}</TableCell>
+            <TableCell className="text-center">{subject.markHW}</TableCell>
           </TableRow>
           ))}
         </TableBody>

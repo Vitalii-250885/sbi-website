@@ -44,11 +44,11 @@ export const siteConfig = {
 		},
 		{
 			label: 'Пройдені предмети',
-			href: '#',
+			href: '#subjects',
 		},
 		{
 			label: 'Бібліотека',
-			href: '#',
+			href: '#library',
 		},
 	],
 
