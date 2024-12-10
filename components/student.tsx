@@ -2,6 +2,7 @@ import { Image } from '@nextui-org/image'
 import React from 'react'
 import { title } from './primitives'
 import clsx from 'clsx'
+import { Table, TableBody, TableCell, TableColumn, TableHeader, TableRow } from '@nextui-org/react'
 
 function Student() {
   return (
@@ -21,11 +22,79 @@ function Student() {
      <p className='text-sm text-zinc-500'>-</p>
      </div>
     </div>
-    <p>Електронна пошта: <a href="mailto:vova@gmail.com" className='text-zinc-500'>vova@gmail.com</a></p>
-    <p>Номер телефону: <a href="tell:+380967167473" className='text-zinc-500'>096-716-74-73</a></p>
-    <p>Адреса: <span className='text-zinc-500'>-</span></p>
-    <p>Церква: <span className='text-zinc-500'>Черче</span></p>
-    <p>Служіння: <span className='text-zinc-500'>Проповідник</span></p>
+
+    {/* <Table
+        color='default'
+        selectionMode="single"
+        defaultSelectedKeys={["2"]}
+        aria-label="Example static collection table"
+      >
+        <TableHeader>{'1': '1'}</TableHeader>
+        <TableBody>
+        <TableColumn>
+          <TableRow key="1">
+            <TableCell>Tony Reichert</TableCell>
+            <TableCell>CEO</TableCell>
+          </TableRow>
+          </TableColumn>
+          <TableRow key="2">
+            <TableCell>Zoey Lang</TableCell>
+            <TableCell>Technical Lead</TableCell>
+          </TableRow>
+          <TableRow key="3">
+            <TableCell>Jane Fisher</TableCell>
+            <TableCell>Senior Developer</TableCell>
+          </TableRow>
+          <TableRow key="4">
+            <TableCell>William Howard</TableCell>
+            <TableCell>Community Manager</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table> */}
+
+    
+    {/* <table>
+      <tr>
+        <td>
+          <span>E-mail:</span>
+        </td>
+        <td>
+          <a href="mailto:vova@gmail.com" className='text-zinc-500'>vova@gmail.com</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>Телефон:</span>
+        </td>
+        <td>
+        <a href="tel:+380967167473" className='text-zinc-500'>096-716-74-73</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>Адреса:</span>
+        </td>
+        <td>
+          <span className='text-zinc-500'>-</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>Церква:</span>
+        </td>
+        <td>
+        <span className='text-zinc-500'>Черче</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span>Служіння:</span>
+        </td>
+        <td>
+          <span className='text-zinc-500'>Проповідник</span>
+        </td>
+      </tr>
+    </table> */}
     </div>
   )
 }
