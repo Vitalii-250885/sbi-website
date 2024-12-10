@@ -4,7 +4,7 @@ import { RangeCalendar } from '@nextui-org/calendar'
 import { CalendarDate } from '@internationalized/date'
 
 function CalendarComponent() {
-	let date = new CalendarDate(2024, 11, 25)
+	let date = new CalendarDate(2024, 2, 3)
 
 	return (
 		<RangeCalendar

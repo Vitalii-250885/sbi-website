@@ -20,12 +20,12 @@ function SubjectsNextSession() {
 				</TableHeader>
 				<TableBody>
 					<TableRow key='1'>
-						<TableCell>Вчення Біблії про гріх і людину</TableCell>
-						<TableCell>Абрамцов Олексій Сергійович</TableCell>
+						<TableCell> </TableCell>
+						<TableCell> </TableCell>
 					</TableRow>
 					<TableRow key='2'>
-						<TableCell>Вивчення книги пророка Даниїла</TableCell>
-						<TableCell>Парфенюк Павло Васильович</TableCell>
+						<TableCell> </TableCell>
+						<TableCell> </TableCell>
 					</TableRow>
 				</TableBody>
 			</Table>
