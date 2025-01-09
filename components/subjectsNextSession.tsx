@@ -20,12 +20,12 @@ function SubjectsNextSession() {
 				</TableHeader>
 				<TableBody>
 					<TableRow key='1'>
-						<TableCell>Біблійне душеопікунство</TableCell>
-						<TableCell>Dr Jim Binney</TableCell>
+						<TableCell>Доктрина освячення</TableCell>
+						<TableCell>Дерек Томас</TableCell>
 					</TableRow>
 					<TableRow key='2'>
-						<TableCell>Біблійне душеопікунство</TableCell>
-						<TableCell>Debi Pryde</TableCell>
+						<TableCell>Книга Об'явлення</TableCell>
+						<TableCell>Павло Парфенюк</TableCell>
 					</TableRow>
 				</TableBody>
 			</Table>
