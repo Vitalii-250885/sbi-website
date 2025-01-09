@@ -21,6 +21,8 @@ import { Logo } from '@/components/icons'
 import React, { useState } from 'react'
 import ModalLogIn from './modalLogIn'
 
+import UserAvatar from '../app/students/[id]/components/avatar'
+
 export const NavbarUser = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
 	const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
@@ -61,6 +63,7 @@ export const NavbarUser = () => {
 
 			<NavbarContent justify='end'>
 				<ThemeSwitch />
+				<UserAvatar />
 				<NavbarMenuToggle className='sm:hidden' />
 			</NavbarContent>
 
