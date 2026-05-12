@@ -21,22 +21,15 @@ export default function ContactForm() {
 						href='tel:+380683689307'
 						className='font-bold animation-timeline animate-left'
 						color='foreground'>
-						<img src='/phone.png' alt='facebook' className='w-7 mr-2' />
+						<img src='/phone.png' alt='phone number' className='w-7 mr-2' />
 						+38 (068)-368-93-07
 					</Link>
 					<Link
 						href='tel:+380996193161'
 						className='font-bold animation-timeline animate-left'
 						color='foreground'>
-						<img src='/phone.png' alt='facebook' className='w-7 mr-2' />
+						<img src='/phone.png' alt='phone number' className='w-7 mr-2' />
 						+38 (099)-619-31-61
-					</Link>
-					<Link
-						href='mailto:sbi.in.ua@gmail.com'
-						className='font-bold animation-timeline animate-left'
-						color='foreground'>
-						<img src='/mail.png' alt='facebook' className='w-7 mr-2' />
-						sbi.in.ua@gmail.com
 					</Link>
 					<div className='flex mt-3 animation-timeline animate-left'>
 						<Link
@@ -46,7 +39,7 @@ export default function ContactForm() {
 							<img src='/facebook.png' alt='facebook' className='w-7' />
 						</Link>
 						<Link color='foreground' href='https://www.instagram.com/sbiukr/'>
-							<img src='/instagram.png' alt='facebook' className='w-7' />
+							<img src='/instagram.png' alt='instagram' className='w-7' />
 						</Link>
 					</div>
 				</div>
