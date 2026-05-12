@@ -20,11 +20,11 @@ function SubjectsNextSession() {
         </TableHeader>
         <TableBody>
           <TableRow key='1'>
-            <TableCell>Огляд Старого Завіту</TableCell>
-            <TableCell>Дерек Томас</TableCell>
+            <TableCell>Історія Церкви</TableCell>
+            <TableCell>Віталій Гоман</TableCell>
           </TableRow>
           <TableRow key='2'>
-            <TableCell>Послання до Євреїв</TableCell>
+            <TableCell>1 Коринтян</TableCell>
             <TableCell>Павло Парфенюк</TableCell>
           </TableRow>
         </TableBody>
